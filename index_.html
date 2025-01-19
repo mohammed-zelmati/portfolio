@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mon Portfolio</title>
+    <link rel="stylesheet" href="style_.css">
+</head>
+<body>
+    <header>
+        <h1>Mon Portfolio</h1>
+        <!-- Checkbox pour activer/désactiver le menu --> 
+        <input type="checkbox" id="menu-toggle"> 
+        <label for="menu-toggle" class="menu-icon">&#9776;</label>
+        <nav>
+            <a href="#about">À propos</a>
+            <a href="#projects">Projets</a>
+            <a href="#sociaux">Contact</a>
+            <a href="#experiences">Perso/Pro</a>
+            
+            <a href="CV_DWWM_MZ.pdf" download="CV_DWWM_MZ.pdf">Mon CV</a>
+        </nav>
+    </header>
+    
+    <main>
+        <section id="about"> 
+            <h2>À propos de moi</h2> 
+            <img src="images/Portfolio-IA.jpg" alt="IA"> 
+            <h1 align="center">
+                <img src="https://readme-typing-svg.herokuapp.com/?&font=Righteous&size=35&center=true&vCenter=true&center=true&width=900&height=70&duration=5000&lines=Salut!+👋;+Je+suis+Mohammed+ZELMATI+!;Espérant+en+Data+Scientist;" />
+            </h1>
+        </section>
+
+        <section id="social">
+            <div class="contact">
+                <h2>Informations de contact</h2>
+                <div class="contact-flex">
+                    <p>Prenom et nom:</p>
+                    <p>Mohammed ZELMATI</p>
+                </div>
+                <div class="contact-flex">
+                    <p>Adresse :</p>
+                    <p>Les Néréides 13011 Marseille</p>
+                </div>
+                <div class="contact-flex">
+                    <p>téléphone :</p>
+                    <p>06 25 85 51 89</p>
+                </div>
+                <div class="contact-flex">
+                    <p>Email :</p>
+                    <p><a href="mohammed.zelmati@laplateforme.io">Em@il</a></p>
+                </div>
+                <div class="social">
+                    <a href="https://github.com/mohammed-zelmati/presentation"><img src="images/github.png" alt="github" ></a>
+                    <a href="https://www.linkedin.com/in/"><img src="images/linkedin.png" alt="linkedin" ></a>
+                    <a href="https://www.facebook.com/"><img src="images/facebook.png" alt="facebook" > </a>
+                    <a href="https://www.x.com/"><img src="images/x.png" alt="X"></a>
+                </div>
+            </div>
+        </section>
+        
+        <section id="projects">
+            <h2>Mes Projets</h2>
+            <article>
+                <h3>1- Tic-Tac-Toe</h3>
+                <p>Ce projet implémente un jeu de **Tic-Tac-Toe** en utilisant Python avec les bibliothèques Tkinter et Pygame. 
+                    Il permet de jouer à ce jeu classique soit contre un autre joueur humain, soit contre une intelligence artificielle (IA).<br>
+                <strong>- Interface Graphique Utilisateur (GUI) :</strong> Utilise Tkinter pour créer une interface utilisateur intuitive et interactive.<br>
+                <strong>- Sons de Clic : </strong> Intègre Pygame pour ajouter des effets sonores lors des clics sur les boutons.<br>
+                <strong> - Mode de Jeu : </strong> Possibilité de jouer en mode joueur contre joueur ou contre l'IA.<br>
+                <strong>- Algorithme Minimax :</strong>  Implémente l'algorithme Minimax pour déterminer les meilleurs coups de l'IA, 
+                offrant ainsi un défi intéressant aux joueurs.<br>
+                Pour exécuter le jeu, assure-toi que les bibliothèques Tkinter et Pygame sont installées. Lance le script Python,
+                 et l'application GUI s'ouvrira avec le jeu de Tic-Tac-Toe: <strong>$python tic_tac_toe.py</strong> </p>
+            </article>
+            <article>
+                <h3>Fansite</h3>
+                <p>Ce projet Fansite est une plateforme dédiée à diverses passions et célébrités, 
+                    offrant des sections distinctes pour différents sujets d'intérêt. 
+                    Conçu avec HTML et CSS, ce site présente une interface conviviale et
+                    attrayante pour les visiteurs. Voici un aperçu des célébrités :<br><br>
+                    <strong>L'équitation : </strong>Une introduction à l'art et au sport de l'équitation, mettant en lumière
+                    les diverses disciplines et la relation unique entre le cavalier et le cheval. Inclut 
+                    des statistiques sur la popularité de l'équitation en France.<br><br>
+                    <strong>Young Thug :</strong> Présentation du célèbre rappeur américain, Young Thug, en mettant en avant 
+                    son influence dans le monde de la musique trap et quelques-unes de ses controverses.<br><br>
+                    <strong>The Flash :</strong> Un aperçu de la série télévisée américaine "The Flash", basée sur le 
+                    personnage de Barry Allen de l'univers DC Comics. Décrit l'intrigue principale et la 
+                    diffusion de la série.
+                </p>
+            </article>
+            <article>
+                <h3>Projet 3</h3>
+                <p>Description du projet 3...<strong>à compléter</strong></p>
+            </article>
+            <article>
+                <h3>Projet 4</h3>
+                <p>Description du projet 4...<strong>à compléter</strong></p>
+            </article>
+            <!-- Ajoutez d'autres projets ici -->
+        </section>
+        <section id="experiences">
+            <article>
+                <h2>Compétences</h2>
+                <p>-Intervenir sur les composants matériels d’un équipement numérique<br>
+                    -Mettre à jour, configurer et personnaliser un équipement numérique<br>
+                    -Contribuer à la sécurité d'un équipement numérique et ses données<br>
+                    -Diagnostiquer et résoudre un dysfonctionnement numérique<br>
+                    -Assister les utilisateurs en environnement bureautique ou sur leurs équipements numériques.<br>
+                    -Développement de logiciels et d'architecture web<br>
+                    -Méthode agile, Git et GitHub<br>
+                    -Conception Merise, Canva, Figma, Belsamiq<br>
+                    -Langages HTML, CSS, PHP, MySqlJS et PYTHON, WORDPRESS, base des données...
+                </p>
+            </article>
+            <!--article>
+                <h3>Expériences personnelle</h3>
+                <p>Description de'expériences perso...<strong>à compléter</strong></p>
+            </article-->
+            <article>
+                <h2>Expériences professionnelle</h2>
+                <h4>CHEF SECTION DES OPÉRATIONS COMPTABLES</h4>
+                <h5>JUIN 1998 - AOUT 2010 : LA DIRECTION DE LA CONSERVATION FONCIERE - Annaba Algérie</h5>
+                <p>Gestion de la conservation foncière, responsable de la gestion et du contrôle ainsi que d’une 
+                    équipe de 9 fonctionnaires.Logiciels COMPTA.</p>
+
+                <h4> STAGE DEVELOPPEUR WEB ET WEB MOBILE</h4>
+                <h5>MAI-JUIN 2021 CEREMA MEDITERRANNEE à Aix-en-Provence</h5>   
+                <p>Projet E-commerce Salon de thé LA PICHOTO REGALADO à Miramas</p>
+                
+                <h4> LOGISTICIEN chauffeur</h4>
+                <h5> 2018-2020   Agent de piste aéroportuaire Marignane</h5>  
+                <h5> 2016-2017   Croix Rouge (MARSEILLE)</h5>   
+                <h5>2011 - 2015 : différentes entreprises du logistiques et BTP/TP (PACA)</h5>
+            </article>
+            <article>
+                <h2>Formations</h2>
+
+                <h4>DÉVELOPPEUR WEB ET WEB MOBILE</h4>
+                <p>Développement Frontend et Backend avec les recommandations de sécurités.
+                    Titre professionnel Niveau III  (Bac+2) | octobre 2020 - juin 2021</p>
+                
+                <h4>COMPTABILITE ET GESTION</h4>
+                <p>Travaux de comptabilité approfondis et gestion de fiscalité.
+                    Bac+3 Université de Annaba | septembre 1998- juin 2001</p>
+                
+                <h4>COURSERA GOOGLE CERTIFICATES</h4>
+                <p>Fondamentaux de la cybersécurité * avril 2024
+                Faire preuve de prudence : gestion des risques de sécurité * avril 2024
+                Bases de la conception Expérience Utilisateur (UX) * avril 2024 </p>
+                   
+                
+                </article>
+            <!-- Ajoutez d'autres projets ici -->
+        </section>
+        
+        <!--section id="contact">
+            <h2>Contactez-moi</h2>
+            <form>
+                <label for="name">Nom :</label>
+                <input type="text" id="name" name="name">
+                <label for="email">Email :</label>
+                <input type="email" id="email" name="email">
+                <label for="message">Message :</label>
+                <textarea id="message" name="message"></textarea>
+                <button type="submit">Envoyer</button>
+            </form>
+        </section-->
+    </main>
+    
+    <footer>
+        <p>&copy; 2025 <strong>Mohammed ZELMATI</strong>. Tous droits réservés.</p>
+    </footer>
+</body>
+</html>

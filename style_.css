@@ -1,0 +1,276 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;  
+}
+
+header {
+    background: #070202;
+    color: #fff;
+    padding: 1rem 0;
+    text-align: center;
+}
+
+/* menu humberger */
+.menu-icon { 
+    display: none; 
+    font-size: 30px;
+    cursor: pointer;
+} 
+#menu-toggle { 
+    display: none; 
+}
+
+header nav {
+    list-style: none;
+    padding: 0;
+}
+
+header nav a {
+    display: inline;
+    margin: 0 1rem;
+    color:rgb(230, 230, 230);
+}
+
+header nav a {
+    color: #fff;
+    text-decoration: none;
+}
+
+header nav a:hover {
+    color: #27a31a;
+}
+
+main {
+    padding: 2rem;
+    background: #2f3747;
+}
+
+section {
+    margin-bottom: 2rem;
+    
+}
+
+h2, h3{
+    border-bottom: 2px solid #edeaea;
+    padding-bottom: 0.5rem;
+}
+h3, h4, h5 {
+    color:rgb(230, 230, 230);
+}
+
+#about img {
+    width: 800px;
+    max-width: 100%;
+    height: 300px;
+    display: block;
+    margin: 0 auto;
+    border: 2px solid #333;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+#about h1 img {
+    height: 60px;
+    background:rgb(230, 230, 230);
+}
+
+/* section sociaux*/
+.contact-flex{
+    display: flex;
+    flex-flow:row wrap;
+    align-items:center;
+}
+.contact-flex p:first-child{
+    flex : 0 0 40%;
+}
+.contact-flex p:last-child{
+    flex : 0 0 60%;
+    font-size: 16px;
+    color:#00fe0d;
+    
+}
+.contact-flex p a{
+    font-size: 1.2em;
+    color:#00fe0d;
+}
+.contact-flex p a:hover{
+    font-size: 1.2em;
+    color:rgb(0, 255, 255);
+}
+.social{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content:center;
+    margin: 10px auto 0px auto;
+}
+
+.social img{
+    width:40px;
+    height:40px;
+    border-radius: 50%;
+}
+
+.social a {
+    margin-right: 20px;
+}
+
+/* Pour éviter un espace à droite du dernier lien, tu peux utiliser : */
+.social a:last-child {
+    margin-right: 0;
+}
+
+.projects h3 {
+    font-size: 20px;
+    color:rgb(255, 255, 255)
+}
+
+strong{
+    color:rgb(198, 248, 204);
+}
+form label {
+    display: block;
+    margin-top: 1rem;
+}
+
+form input, form textarea {
+    width: 100%;
+    padding: 0.5rem;
+    margin-top: 0.5rem;
+}
+
+form button {
+    display: block;
+    background: #6603e6;
+    color: #fff;
+    padding: 0.5rem 1rem;
+    border: none;
+    margin-top: 1rem;
+    cursor: pointer;
+}
+
+form button:hover {
+    background: #04f410;
+    font-size: 1em;
+    color: rgb(49, 18, 18);
+}
+
+article {
+    background: #110f0f;
+    padding: 1rem;
+    margin-bottom: 1rem;
+}
+
+footer {
+    background: #070202;;
+    color: #fff;
+    text-align: center;
+    padding: 20px; /* Ajouter du padding pour plus d'espace */
+    position: fixed;
+    width: 100%;
+    max-height: 20px;
+    bottom: 0;
+}
+
+footer p {
+    text-align: center;
+    margin-top: -10px;
+}
+
+/* Animations */
+h1, h2, h3, p {
+    animation: fadeIn 2s ease-in-out;
+}
+p {
+    color: #edeaea;
+}
+
+h2 {
+    color:aqua;
+}
+h3 {
+    color:rgb(245, 237, 171);
+}
+h4 {
+    color:#00fe0d;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+button, a {
+    transition: background 0.3s ease;
+}
+
+/* Media Queries */
+
+/* Styles pour les petits appareils (téléphones) */
+@media (max-width: 768px) {
+    nav {
+        flex-direction: column;
+        display: none; 
+        width: 100%; 
+        align-items: center;
+    }
+
+    header:has(h2) {
+        font-size:0.9em;
+        
+    }
+    section:has(h2) {
+        font-size:0.8em;
+    }
+
+    .menu-icon { 
+        display: block; 
+        position: absolute; 
+        top: 10px; 
+        left: 20px;
+    } 
+
+    #menu-toggle:checked + .menu-icon + nav { 
+        display: flex; 
+    }
+    
+    header nav a, header nav { 
+    padding: 10px; 
+    border-top: 1px solid #444; 
+    text-align: center;
+    } 
+
+    .menu-icon { 
+    display: block; 
+    position: absolute; 
+    top: 10px; 
+    left: 20px;
+    } 
+
+    #menu-toggle:checked + .menu-icon + nav { 
+    display: flex; 
+    }
+
+    footer {
+        text-align: center; /* Centrer le texte */
+        padding: 15px; /* Ajouter du padding pour plus d'espace */
+    }
+
+    footer p {
+        font-size: 14px; /* Réduire la taille du texte pour les petits écrans */
+    }
+} 
+
+/* Media query pour les très petits écrans */
+@media (max-width: 480px) {
+    footer {
+        padding: 10px; /* Réduire encore plus le padding */
+    }
+
+    footer p {
+        font-size: 12px; /* Réduire encore plus la taille du texte */
+    }
+    footer:has(p) {
+        font-size:0.8em;   
+    }
+}
