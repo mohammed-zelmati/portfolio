@@ -56,7 +56,7 @@ h2, h3{
     border-bottom: 2px solid #edeaea;
     padding-bottom: 0.5rem;
 }
-h3, h4, h5 {
+h3, h4, h5, h6 {
     color:rgb(230, 230, 230);
 }
 
@@ -195,6 +195,13 @@ h4 {
     color:#00fe0d;
 }
 
+h5 {
+    color:cyan
+}
+
+h6 {
+    color:blanchedalmond
+}
 @keyframes fadeIn {
     from { opacity: 0; }
     to { opacity: 1; }
