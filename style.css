@@ -6,7 +6,9 @@ body {
 }
 
 header {
-    background: #070202;
+    
+    /* background: #070202; */
+    background: #282727;
     color: #fff;
     padding: 1rem 0;
     text-align: center;
@@ -157,22 +159,37 @@ article {
     padding: 1rem;
     margin-bottom: 1rem;
 }
-
 footer {
-    background: #070202;;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background-color: #282727;
     color: #fff;
     text-align: center;
-    padding: 20px; /* Ajouter du padding pour plus d'espace */
-    position: fixed;
-    width: 100%;
-    max-height: 20px;
-    bottom: 0;
+    padding: 10px 0;
+    box-shadow: 0 -2px 10px rgba(0, 0, 0, 0.5);
+}
+
+footer a {
+    color: #fff;
+    text-decoration: none;
+    margin-right: 10px;
+}
+
+footer i {
+    font-size: 2rem;
 }
 
 footer p {
-    text-align: center;
-    margin-top: -10px;
+    margin: 0;
+    font-size: 0.9rem;
 }
+footer a:hover i,
+footer a:hover {
+    color: #ffcc00; /* Change la couleur au survol */
+    transition: color 0.3s;
+}
+
 
 /* Animations */
 h1, h2, h3, p {
