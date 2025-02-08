@@ -6,8 +6,6 @@ body {
 }
 
 header {
-    
-    /* background: #070202; */
     background: #282727;
     color: #fff;
     padding: 1rem 0;
@@ -159,6 +157,14 @@ article {
     padding: 1rem;
     margin-bottom: 1rem;
 }
+
+article img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 70%;
+}
+
 footer {
     position: fixed;
     bottom: 0;
@@ -228,7 +234,7 @@ button, a {
 /* Media Queries */
 
 /* Styles pour les petits appareils (téléphones) */
-@media (max-width: 768px) {
+@media (min-width: 768px) {
     nav {
         flex-direction: column;
         display: none; 
@@ -284,8 +290,9 @@ button, a {
 
 /* Media query pour les très petits écrans */
 @media (max-width: 480px) {
-    footer {
-        padding: 10px; /* Réduire encore plus le padding */
+    
+    article img, footer , section{
+        padding: 15px; /* Réduire encore plus le padding */
     }
 
     footer p {

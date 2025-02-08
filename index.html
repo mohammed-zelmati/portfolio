@@ -20,7 +20,8 @@
             <a href="#experiences">Perso/Pro</a>
             <!--a href="ZELMATI_Mohammed_CV.pdf" download="ZELMATI_Mohammed_CV.pdf">Mon CV</a-->
             <a href="https://mohammed-zelmati.github.io/portfolio/ZELMATI_Mohammed_CV.pdf" target="_blank">Mon CV</a>
-
+            <a href="https://mohammed-zelmati.github.io/portfolio/preuve.pdf" target="_blank">Titre/Attest...</a>
+            
         </nav>
     </header>
     
@@ -65,6 +66,7 @@
             <h2>Mes Projets</h2>
             <article>
                 <h3>1- Tic-Tac-Toe</h3>
+                <img src="images/tictactoe.jpg" alt="Tic-tac-toe"> 
                 <p>Ce projet implémente un jeu de **Tic-Tac-Toe** en utilisant Python avec les bibliothèques Tkinter et Pygame. 
                     Il permet de jouer à ce jeu classique soit contre un autre joueur humain, soit contre une intelligence artificielle (IA).<br>
                 <strong>- Interface Graphique Utilisateur (GUI) :</strong> Utilise Tkinter pour créer une interface utilisateur intuitive et interactive.<br>
@@ -77,6 +79,7 @@
             </article>
             <article>
                 <h3>2 - Fansite</h3>
+                <img src="images/fansite.jpg" alt="Fansite"> 
                 <p>Ce projet Fansite est une plateforme dédiée à diverses passions et célébrités, 
                     offrant des sections distinctes pour différents sujets d'intérêt. 
                     Conçu avec HTML et CSS, ce site présente une interface conviviale et
@@ -92,7 +95,95 @@
                 </p>
             </article>
             <article>
+                <h3>4- Horloge Graphique Interactive avec Fonctionnalité d'Alarme en Python</h3>
+                <img src="images/clock1.jpg" alt="Clock"> 
+                <h4>Description du projet: </h4>
+                <p>Ce projet crée une horloge graphique avec une fonctionnalité d'alarme en utilisant.<br>
+                les bibliothèques Python time, threading, playsound, et tkinter.</p>
+                <h5>Caractéristiques principales :</h5>
+                <h5>Affichage de l'heure :</h5>
+                
+                <p>L'heure est mise à jour chaque seconde et affichée dans une fenêtre Tkinter.<br>
+                Le format d'affichage de l'heure peut être choisi entre 12 heures (AM/PM) et 24 heures.<br>
+                Le texte de l'heure est affiché avec des couleurs et des polices personnalisées.</p>
+                
+                <h5>Alarme :</h5>
+                <p>L'utilisateur peut régler une alarme en entrant les heures, minutes et secondes dans des champs d'entrée.<br>
+                Lorsque l'heure de l'alarme est atteinte, un fichier audio (alarme.mp3) est joué.</p>
+
+                <h5>Pause et reprise : </h5>
+                <p>L'horloge peut être mise en pause et relancée à tout moment grâce à des boutons.</p> 
+
+                <h5>Fonctionnement : </h5>
+
+                <h5>Initialisation de l'horloge :</h5>
+                
+                <p>La fonction obtenir_heure_systeme() récupère l'heure actuelle du système et <br>
+                la fonction regler_heure() initialise l'heure de l'horloge.</p>
+                
+                <h5>Affichage de l'heure :</h5>
+                
+                <p>La fonction afficher_heure() est exécutée dans un thread séparé pour mettre à jour 
+                l'heure chaque seconde et la refléter dans l'interface Tkinter.<br>
+                Cette fonction vérifie également si l'heure actuelle correspond à celle de l'alarme et, 
+                le cas échéant, déclenche l'alarme en jouant un fichier audio.</p>
+
+                <h5>Régler l'alarme et changer de format :</h5>
+                <p>La fonction regler_alarme() permet de définir l'heure de l'alarme.<br>
+                La fonction changer_format_heure() change le format d'affichage entre 12 heures et 24 heures.</p>
+                
+                <h5>Contrôle de l'horloge :</h5>
+                <p>Les fonctions mettre_en_pause() et relancer() permettent de mettre en pause et de relancer l'horloge.</p>
+                
+                <h5>Interface utilisateur :</h5>
+                <p>L'interface graphique est créée en utilisant Tkinter et comprend des éléments tels que des labels, 
+                des champs d'entrée, des boutons et des menus déroulants, tous stylisés avec des couleurs 
+                et des polices personnalisées pour une meilleure esthétique.</p>
+
+                
+            </article>
+
+            <article>
+                <h3>5- Calculatrice</h3>
+                <img src="images/calculatrice.jpg" alt="Calculatrice"> 
+                <h4>Description du projet: </h4>
+                <p>Ce projet représente une calculatrice développée avec la bibliothèque tkinter en Python. <br>
+                    Voici une vue d'ensemble des principales fonctionnalités et du fonctionnement de ce projet:</p>
+                <h5>Fonctionnalités Principales</h5>
+                <h5>Calculer une Expression Arithmétique :</h5>
+                <h5>Fonction calculer() :</h5>
+                <p>Prend une expression mathématique en entrée, la traite et renvoie le résultat.<br>
+                La fonction eval_arithmetic(expr) gère les opérations de base sans utiliser eval() 
+                directement pour des raisons de sécurité.</p>
+                <h5>Gérer l'historique des Calculs :</h5>
+                <h5>Fonction update_historique() :</h5>
+                <p> Affiche l'historique des calculs dans une zone dédiée.</p>
+                
+                <h5>Fonction reset_historique() :</h5>
+                <p>Réinitialise l'historique des calculs.</p>
+                 
+                <h5>Gestion de l'Entrée :</h5>
+                <h5>Fonction clear() :</h5>
+                <p>Efface l'entrée actuelle.</p>
+                 
+                <h5>Fonction append_to_entry(value) :</h5>
+                <p>Ajoute un chiffre ou une opération à l'entrée actuelle.</p>
+                 
+                <h5>Fonction delete_last() :</h5>
+                <p>Supprime le dernier caractère de l'entrée.<br>
+                Interface Graphique (GUI)<br>
+                Utilisation de tkinter pour créer l'interface graphique.<br>
+                Les différents boutons de la calculatrice (0-9, +, -, *, /, etc.) sont créés et placés dans une grille (grid).<br>
+                Une zone de texte (entry) pour saisir et afficher les expressions mathématiques et les résultats.<br>
+                Une zone dédiée à l'affichage de l'historique des calculs.</p>
+                 
+                <h5>Sécurité</h5>
+                <p>Gestion des exceptions, comme la division par zéro, et affichage de messages d'erreur via des boîtes de dialogue (messagebox).<br>
+                Le projet est un excellent exemple de comment utiliser tkinter pour créer une application GUI simple mais fonctionnelle en Python.</p>   
+            </article>
+            <article>
                 <h3>3- Jeu du Pendu Interactif</h3>
+                <img src="images/pendu.jpg" alt="Pendu"> 
                 <h4>Description du Projet :</h4>
                 <p> Le projet "Jeu du Pendu Interactif" est une application de jeu développée en Python en utilisant la bibliothèque Pygame. <br>
                     Le jeu permet aux utilisateurs de jouer au célèbre jeu du pendu, où le but est de deviner un mot secret en proposant des lettres une à une.</p>
@@ -139,88 +230,51 @@
                     une gestion intuitive des scores et des mots. <strong>🎮💡</strong></p>
             </article>
             <article>
-                <h3>4- Horloge Graphique Interactive avec Fonctionnalité d'Alarme en Python</h3>
+                <h3>6- Fruits Ninja slicer</h3>
+                <img src="images/fruitsNinja.jpg" alt="FruitsNinjaSlicer"> 
                 <h4>Description du projet: </h4>
-                <p>Ce projet crée une horloge graphique avec une fonctionnalité d'alarme en utilisant.<br>
-                les bibliothèques Python time, threading, playsound, et tkinter.</p>
-                <h5>Caractéristiques principales :</h5>
-                <h5>Affichage de l'heure :</h5>
+                <p>Dans ce jeu, les joueurs utilisent les différentes touches du clavier et de la souris pour trancher. 
+                Le joueur doit appuyer sur les touches ou le curseur correctes le plus rapidement possible pour réussir à ne manquer aucun fruit.
+                Le but du jeu est de marquer le plus de points possible en tranchant tous les fruits apparaissent à l’écran.Vous vous rappelez 
+                progressivement les règles du jeu :
+                 ● Trancher les fruits qui apparaissent à l’écran vous donne des points,
+                 ● Pour chaque fruit raté et non tranché, vous obtenez un strike, au bout de 3 strikes, la partie s’achève,
+                 ● Trancher les glaçons qui apparaissent à l’écran arrête le temps pendant 3 à 5 secondes,
+                 ● Trancher en un coup plusieurs fruits qui apparaissent à l’écran donne un combo,
+                 ● Trancher les bombes qui apparaissent à l’écran fait instantanément perdre la partie,
+                 ● Le score final correspond au nombre de fruits tranchés durant la partie.
+                Par exemple, +1 point pour un fruit tranché, +2 points pour trois fruits tranchés en un seul coup, +3 points pour quatre fruits
+                 tranchés en un seul coup, et ainsi de suite.
+                Personnalisez au maximum votre jeu pour une meilleure expérience utilisateur. Ajoutez des bruitages, une musique d’ambiance. 
+                Donnez la possibilité au joueur de choisir un niveau de difficulté (fréquence d’apparition des fruits, le nombre de fruits qui 
+                apparaissent, ...) ainsi qu’un support multilingue (mots en plusieurs langues) via le menu du jeu.</p>
                 
-                <p>L'heure est mise à jour chaque seconde et affichée dans une fenêtre Tkinter.<br>
-                Le format d'affichage de l'heure peut être choisi entre 12 heures (AM/PM) et 24 heures.<br>
-                Le texte de l'heure est affiché avec des couleurs et des polices personnalisées.</p>
-                
-                <h5>Alarme :</h5>
-                <p>L'utilisateur peut régler une alarme en entrant les heures, minutes et secondes dans des champs d'entrée.<br>
-                Lorsque l'heure de l'alarme est atteinte, un fichier audio (alarme.mp3) est joué.</p>
-
-                <h5>Pause et reprise : </h5>
-                <p>L'horloge peut être mise en pause et relancée à tout moment grâce à des boutons.</p> 
-
-                <h5>Fonctionnement : </h5>
-
-                <h5>Initialisation de l'horloge :</h5>
-                
-                <p>La fonction obtenir_heure_systeme() récupère l'heure actuelle du système et <br>
-                la fonction regler_heure() initialise l'heure de l'horloge.</p>
-                
-                <h5>Affichage de l'heure :</h5>
-                
-                <p>La fonction afficher_heure() est exécutée dans un thread séparé pour mettre à jour 
-                l'heure chaque seconde et la refléter dans l'interface Tkinter.<br>
-                Cette fonction vérifie également si l'heure actuelle correspond à celle de l'alarme et, 
-                le cas échéant, déclenche l'alarme en jouant un fichier audio.</p>
-
-                <h5>Régler l'alarme et changer de format :</h5>
-                <p>La fonction regler_alarme() permet de définir l'heure de l'alarme.<br>
-                La fonction changer_format_heure() change le format d'affichage entre 12 heures et 24 heures.</p>
-                
-                <h5>Contrôle de l'horloge :</h5>
-                <p>Les fonctions mettre_en_pause() et relancer() permettent de mettre en pause et de relancer l'horloge.</p>
-                
-                <h5>Interface utilisateur :</h5>
-                <p>L'interface graphique est créée en utilisant Tkinter et comprend des éléments tels que des labels, 
-                des champs d'entrée, des boutons et des menus déroulants, tous stylisés avec des couleurs 
-                et des polices personnalisées pour une meilleure esthétique.</p>
-
-                
+            
             </article>
             <article>
-                <h3>5- Calculatrice</h3>
+                <h3>6- jeu Blackjack - en POO</h3>
+                <img src="images/blackjackCroupier.jpg" alt="jeuBlackJack"> 
                 <h4>Description du projet: </h4>
-                <p>Ce projet représente une calculatrice développée avec la bibliothèque tkinter en Python. <br>
-                    Voici une vue d'ensemble des principales fonctionnalités et du fonctionnement de ce projet:</p>
-                <h5>Fonctionnalités Principales</h5>
-                <h5>Calculer une Expression Arithmétique :</h5>
-                <h5>Fonction calculer() :</h5>
-                <p>Prend une expression mathématique en entrée, la traite et renvoie le résultat.<br>
-                La fonction eval_arithmetic(expr) gère les opérations de base sans utiliser eval() 
-                directement pour des raisons de sécurité.</p>
-                <h5>Gérer l'historique des Calculs :</h5>
-                <h5>Fonction update_historique() :</h5>
-                <p> Affiche l'historique des calculs dans une zone dédiée.</p>
-                
-                <h5>Fonction reset_historique() :</h5>
-                <p>Réinitialise l'historique des calculs.</p>
-                 
-                <h5>Gestion de l'Entrée :</h5>
-                <h5>Fonction clear() :</h5>
-                <p>Efface l'entrée actuelle.</p>
-                 
-                <h5>Fonction append_to_entry(value) :</h5>
-                <p>Ajoute un chiffre ou une opération à l'entrée actuelle.</p>
-                 
-                <h5>Fonction delete_last() :</h5>
-                <p>Supprime le dernier caractère de l'entrée.<br>
-                Interface Graphique (GUI)<br>
-                Utilisation de tkinter pour créer l'interface graphique.<br>
-                Les différents boutons de la calculatrice (0-9, +, -, *, /, etc.) sont créés et placés dans une grille (grid).<br>
-                Une zone de texte (entry) pour saisir et afficher les expressions mathématiques et les résultats.<br>
-                Une zone dédiée à l'affichage de l'historique des calculs.</p>
-                 
-                <h5>Sécurité</h5>
-                <p>Gestion des exceptions, comme la division par zéro, et affichage de messages d'erreur via des boîtes de dialogue (messagebox).<br>
-                Le projet est un excellent exemple de comment utiliser tkinter pour créer une application GUI simple mais fonctionnelle en Python.</p>   
+                <p>Le but est de faire le plus de points sans dépasser 21. Chaque carte représente une valeur :
+                - de 2 à 10 : ces cartes ont pour valeur sa valeur nominale
+                - une figure a pour valeur 10 points
+                - un as 1 ou 11 points au choix
+
+                Le jeu commence avec les joueurs qui reçoivent chacun 2 cartes. Ensuite, le joueur peut choisir de "prendre" 
+                (recevoir) une ou plusieurs cartes supplémentaires pour tenter d'améliorer sa main, ou de "passer" et laisser
+                le tour au croupier. Le croupier prend des cartes jusqu'à ce qu'il ait au moins 17 points, puis s'arrête. 
+                Si la main du joueur dépasse 21, il perd immédiatement.
+                Si le total de la main du joueur est supérieur à celui du croupier, le joueur gagne. 
+                Sinon, c'est le croupier qui gagne.
+
+                Création au minimum deux classes Carte et Jeu.
+
+                La classe Carte aura au minimum un attribut valeur et couleur. La classe Jeu quant à elle devra gérer 
+                l’ensemble des cartes. Les cartes du jeu seront stockées dans un attribut paquet représenté par une liste 
+                et contenant 52 cartes.
+
+                Création plusieurs méthodes nécessaires pour jouer une partie.Avec la possibilité de rejouer une autre partie ou quitter 
+                le jeu si la partie est fini.
             </article>
                 <!-- Ajoutez d'autres projets ici -->
         </section>
